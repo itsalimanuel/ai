@@ -1,0 +1,104 @@
+//homepage style
+@import "./vu.scss";
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+#homepage{
+    
+    height: 100vh;
+   .ai{
+       margin: 0;
+       position: absolute;
+       top: 50%;
+       transform: translateY(-50%);
+       &-image{
+           width: 100%;
+       }
+       &-box{
+           &-title{
+            font-family: 'Abel', sans-serif;
+           }
+           margin-top: 3vw;
+           &-list{
+              form{
+                display: flex;
+                justify-content: space-around;
+                .selected{
+                    cursor: pointer;
+                    z-index: 2;
+                    position: relative;
+                    padding: .5vw 1vw;
+                    border-radius: 20px;
+                    background-color: #DDDBDD;
+                    border: none;
+                    color: #000000;
+                    &:hover{
+                     background-color: orange;
+                     color: #ffffff;
+                     transition: .2s;
+                     a{
+                         color: #ffffff;
+                         
+                     }
+                    }
+                  a{
+                      text-decoration: none;
+                      color: #000000;
+                      
+                  }
+                  
+                }
+              }
+           }
+           &-steps{
+               display: flex;
+               justify-content: flex-start;
+               margin: 3vw 2vw;
+               .complete{
+                   margin-right: 1vw;
+                   background: #56535694;
+                   color: #ffffff;
+                   padding: .5vw 1vw;
+                   border-radius: 20px;
+                   font-family: 'Abel', sans-serif;
+                   font-weight: bolder !important;
+                   border: none;
+                   &:hover{
+                       background: #1053A7;
+                       transition: .2s;
+                   }
+               }
+               .cancle{
+                   background-color: #ffffff;
+                   color: #56535694;
+                   border: 1px solid #56535694;
+                   border-radius: 20px;
+                   font-family: 'Abel', sans-serif;
+                   font-weight: bolder !important;
+                   padding: .5vw 1vw;
+                   &:hover{
+                       border: 1px solid #1053A7;
+                       color: #1053A7;
+                   }
+               }
+           }
+           &-next{
+               margin-left: 2vw;
+               .skip{
+                font-family: 'Abel', sans-serif;
+                font-weight: bolder !important;
+                   background: none;
+                   border: none;
+                   color: #56535694;
+               }
+           }
+       }
+
+   }
+}
+
+.active-orange{
+    background-color: orange !important;
+    color: #ffffff !important; 
+    a{
+        color: #ffffff !important;
+    }
+}

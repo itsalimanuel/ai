@@ -2,6 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import  './scripts/jquery.imgareaselect.pack';
+import './scripts/jquery.imgareaselecter.pack';
+
+// import $ from 'jquery';
+
+import arrImageScript from './scripts/arrImageScript';
+import Script from './scripts/script';
+
+import $ from 'jquery';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<App />, document.getElementById('root'));
